@@ -1,0 +1,7 @@
+# Ignored files
+Output.zip
+*.unduhan
+__pycache__/
+*.pyc
+.vscode/
+.idea/

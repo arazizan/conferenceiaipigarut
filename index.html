@@ -212,17 +212,12 @@
                     </div>
                 </a>
 
-                <!-- Desktop Navigation Links (trilingual) -->
-                <nav class="hidden xl:flex items-center gap-5 text-sm font-semibold text-slate-200">
+                <!-- Desktop Navigation Links (trilingual) - Note: #speakers link removed per PRD 4.3 -->
+                <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-200">
                     <a href="#glance" class="hover:text-gold-300 transition-colors">
                         <span data-lang="ar">المؤتمر في سطور</span>
                         <span data-lang="en">Overview</span>
                         <span data-lang="id">Sekilas</span>
-                    </a>
-                    <a href="#speakers" class="hover:text-gold-300 transition-colors">
-                        <span data-lang="ar">المتحدثون</span>
-                        <span data-lang="en">Speakers</span>
-                        <span data-lang="id">Pembicara</span>
                     </a>
                     <a href="#themes" class="hover:text-gold-300 transition-colors">
                         <span data-lang="ar">المحاور العلمية</span>
@@ -267,7 +262,7 @@
                         </button>
                     </div>
 
-                    <!-- Desktop Registration button -->
+                    <!-- Desktop Registration button (Google Form direct) -->
                     <a href="https://forms.gle/PpKqKkbv25GvpAzx5" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full font-black text-xs sm:text-sm bg-gradient-to-r from-gold-400 to-amber-500 hover:from-gold-300 hover:to-amber-400 text-brand-950 shadow-md transition-all shrink-0">
                         <i class="fa-solid fa-file-pen text-brand-950"></i>
                         <span data-lang="ar">سجل الآن ↗</span>
@@ -301,11 +296,6 @@
                 <span data-lang="en">Conference Overview</span>
                 <span data-lang="id">Sekilas Konferensi</span>
             </a>
-            <a href="#speakers" onclick="toggleMobileNav()" class="block py-2 border-b border-white/5 hover:text-gold-300">
-                <span data-lang="ar">المتحدثون الرئيسيون</span>
-                <span data-lang="en">Keynote Speakers</span>
-                <span data-lang="id">Pembicara Utama</span>
-            </a>
             <a href="#themes" onclick="toggleMobileNav()" class="block py-2 border-b border-white/5 hover:text-gold-300">
                 <span data-lang="ar">المحاور العلمية الخمسة</span>
                 <span data-lang="en">The 5 Scientific Themes</span>
@@ -317,28 +307,28 @@
                 <span data-lang="id">Pelatihan Guru Bahasa Arab (Tadrib 5 Hari)</span>
             </a>
             <a href="#journals" onclick="toggleMobileNav()" class="block py-2 border-b border-white/5 hover:text-gold-300">
-                <span data-lang="ar">المجلات العلمية الشريكة (SINTA 2 & 3)</span>
-                <span data-lang="en">Affiliated Journals (SINTA 2 & 3)</span>
-                <span data-lang="id">Jurnal Afiliasi Publikasi (SINTA 2 & 3)</span>
+                <span data-lang="ar">المجلات العلمية الشريكة (SINTA)</span>
+                <span data-lang="en">Affiliated Journals (SINTA)</span>
+                <span data-lang="id">Jurnal Afiliasi Publikasi (SINTA)</span>
             </a>
             <a href="#fees" onclick="toggleMobileNav()" class="block py-2 border-b border-white/5 hover:text-gold-300">
                 <span data-lang="ar">رسوم الاشتراك والتسجيل</span>
                 <span data-lang="en">Registration Fees</span>
                 <span data-lang="id">Rincian Biaya Pendaftaran</span>
             </a>
+            <a href="#contact" onclick="toggleMobileNav()" class="block py-2 border-b border-white/5 hover:text-gold-300">
+                <span data-lang="ar">التسجيل والتواصل</span>
+                <span data-lang="en">Registration & Contact</span>
+                <span data-lang="id">Pendaftaran & Kontak</span>
+            </a>
             
-            <!-- Mobile Action Buttons -->
-            <div class="pt-2 space-y-2">
+            <!-- Mobile Action Button (Single Official Google Form Portal per PRD 4.4) -->
+            <div class="pt-2">
                 <a href="https://forms.gle/PpKqKkbv25GvpAzx5" target="_blank" class="block w-full py-2.5 rounded-xl bg-gradient-to-r from-gold-400 to-amber-500 text-brand-950 font-black text-center text-xs shadow">
                     <i class="fa-solid fa-file-pen mr-1"></i>
                     <span data-lang="ar">فتح استمارة التسجيل (Google Form) ↗</span>
                     <span data-lang="en">Register via Google Form ↗</span>
                     <span data-lang="id">Buka Formulir Pendaftaran (Google Form) ↗</span>
-                </a>
-                <a href="https://tabaacademy.com/register-conf2027" target="_blank" class="block w-full py-2 rounded-xl bg-white/10 border border-gold-400/40 text-gold-300 text-center text-xs">
-                    <span data-lang="ar">بوابة تسجيل مؤسسة طابة (Taba Portal) ↗</span>
-                    <span data-lang="en">Taba Academy Portal ↗</span>
-                    <span data-lang="id">Portal Pendaftaran Yayasan Thaba ↗</span>
                 </a>
             </div>
         </div>
@@ -485,29 +475,22 @@
                     </div>
                 </div>
 
-                <!-- Action CTAs: PRIMARY GOOGLE FORM LINK + Taba Form Link -->
-                <div class="pt-3 sm:pt-6 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 max-w-sm sm:max-w-none mx-auto">
+                <!-- Action CTAs: PRIMARY GOOGLE FORM LINK + VERIFIED BOOKLET LINK (Taba link removed per PRD 4.4 & 4.5) -->
+                <div class="pt-3 sm:pt-6 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-4 max-w-sm sm:max-w-none mx-auto">
                     <!-- PRIMARY GOOGLE FORM BUTTON -->
                     <a href="https://forms.gle/PpKqKkbv25GvpAzx5" target="_blank" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 rounded-full font-black text-brand-950 bg-gradient-to-r from-gold-300 via-gold-400 to-amber-400 hover:from-gold-200 hover:to-gold-300 shadow-xl transition-all transform hover:-translate-y-0.5 text-xs sm:text-base flex items-center justify-center gap-2 border-2 border-amber-300">
                         <i class="fa-solid fa-file-pen text-brand-950 text-sm sm:text-lg"></i>
                         <span data-lang="ar">استمارة التسجيل (Google Form) ↗</span>
-                        <span data-lang="en">Registration (Google Form) ↗</span>
+                        <span data-lang="en">Register via Google Form ↗</span>
                         <span data-lang="id">Pendaftaran via Google Form ↗</span>
                     </a>
 
-                    <!-- Dedicated Taba Form Button -->
-                    <a href="https://tabaacademy.com/register-conf2027" target="_blank" class="w-full sm:w-auto px-5 sm:px-6 py-3 rounded-full font-bold text-white bg-brand-700/80 hover:bg-brand-600 border-2 border-gold-400 shadow-lg transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-arrow-up-right-from-square text-gold-300"></i>
-                        <span data-lang="ar">استمارة مؤسسة طابة (Taba Portal) ↗</span>
-                        <span data-lang="en">Taba Registration Portal ↗</span>
-                        <span data-lang="id">Form Pendaftaran Thaba ↗</span>
-                    </a>
-
-                    <a href="الكتاب التعريفي بالمؤتمر.pdf" target="_blank" class="w-full sm:w-auto px-4 py-3 rounded-full font-semibold text-slate-200 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 text-xs sm:text-sm flex items-center justify-center gap-2">
-                        <i class="fa-regular fa-file-pdf text-red-400"></i>
-                        <span data-lang="ar">الكتاب التعريفي (PDF)</span>
-                        <span data-lang="en">Conference Booklet (PDF)</span>
-                        <span data-lang="id">Buku Panduan (PDF)</span>
+                    <!-- VERIFIED BOOKLET LINK (Per PRD 4.5: assets/booklet-konferensi.pdf) -->
+                    <a href="assets/booklet-konferensi.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 sm:px-6 py-3.5 rounded-full font-bold text-white bg-white/15 hover:bg-white/25 border-2 border-gold-400 shadow-lg transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-file-pdf text-red-400 text-sm sm:text-base"></i>
+                        <span data-lang="ar">الكتاب التعريفي (PDF) ↗</span>
+                        <span data-lang="en">Conference Booklet (PDF) ↗</span>
+                        <span data-lang="id">Buku Panduan (PDF) ↗</span>
                     </a>
                 </div>
 
@@ -619,9 +602,9 @@
                         <span data-lang="id">Publikasi Ilmiah</span>
                     </strong>
                     <p class="font-bold text-brand-950 text-xs sm:text-sm leading-relaxed">
-                        <span data-lang="ar">نشر البحوث المقبولة بعد التحكيم في مجلات علمية دولية محكمة</span>
-                        <span data-lang="en">Publication of accepted papers following scientific peer review in refereed international journals</span>
-                        <span data-lang="id">Publikasi makalah yang dinyatakan lolos peer review pada jurnal ilmiah internasional bereputasi</span>
+                        <span data-lang="ar">نشر البحوث المقبولة بعد التحكيم في مجلات علمية دولية محكمة (SINTA)</span>
+                        <span data-lang="en">Publication of accepted papers following scientific peer review in refereed international journals (SINTA)</span>
+                        <span data-lang="id">Publikasi makalah yang dinyatakan lolos peer review pada jurnal ilmiah internasional bereputasi (SINTA)</span>
                     </p>
                 </div>
 
@@ -629,170 +612,15 @@
         </div>
     </section>
 
-    <!-- SECTION 2: المتحدثون والقيادات الأكاديمية (KEYNOTE SPEAKERS & LEADERSHIP GRID) -->
-    <section id="speakers" class="py-12 sm:py-20 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest bg-gold-100 px-3 py-1 rounded-full border border-gold-300">
-                    <span data-lang="ar">القيادات والمتحدثون</span>
-                    <span data-lang="en">Keynote & Academic Leadership</span>
-                    <span data-lang="id">Pembicara & Pimpinan</span>
-                </span>
-                <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-950 font-arabic mt-3">
-                    <span data-lang="ar">المتحدثون الرئيسيون والقيادة الأكاديمية للمؤتمر</span>
-                    <span data-lang="en">Keynote Speakers & Academic Leadership</span>
-                    <span data-lang="id">Pembicara Utama & Pimpinan Konferensi</span>
-                </h2>
-                <p class="text-slate-600 text-xs sm:text-sm mt-2">
-                    <span data-lang="ar">قيادات وعلماء جامعة معهد الاتحاد الإسلامي بغاروت (IAI PERSIS) ومؤسسة طابة للتعليم والتدريب</span>
-                    <span data-lang="en">Leaders and scholars from IAI PERSIS Garut and Taba Foundation for Education & Training</span>
-                    <span data-lang="id">Jajaran pimpinan dan pakar dari IAI PERSIS Garut serta Yayasan Thaba untuk Pendidikan & Pelatihan</span>
-                </p>
-                <div class="w-16 sm:w-20 h-1 bg-gold-400 mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <!-- 5-Card Responsive Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
-                
-                <!-- 1. Rector: Dr. Tiar Anwar Bachtiar -->
-                <div class="bg-white rounded-3xl p-5 border-2 border-gold-400 shadow-md hover:shadow-xl transition-all text-center flex flex-col items-center">
-                    <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-gold-400 mb-3 bg-slate-100 shadow">
-                        <img src="assets/rektor.png" alt="Dr. Tiar Anwar Bachtiar" class="w-full h-full object-cover object-top">
-                    </div>
-                    <span class="text-[10px] font-bold text-brand-700 bg-brand-50 px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-1.5">
-                        <span data-lang="ar">المتحدث الرئيسي</span>
-                        <span data-lang="en">Opening Keynote</span>
-                        <span data-lang="id">Keynote Pembuka</span>
-                    </span>
-                    <h3 class="text-sm sm:text-base font-bold text-brand-950 font-arabic">Dr. Tiar Anwar Bachtiar, M.Hum.</h3>
-                    <p class="text-[11px] sm:text-xs font-semibold text-gold-700 mt-0.5">
-                        <span data-lang="ar">رئيس جامعة معهد الاتحاد الإسلامي بغاروت</span>
-                        <span data-lang="en">Rector of IAI PERSIS Garut</span>
-                        <span data-lang="id">Rektor IAI PERSIS Garut</span>
-                    </p>
-                    <p class="text-[10px] text-slate-500 mt-1">
-                        <span data-lang="ar">الهيئة القيادية لجمعية الاتحاد الإسلامي (PERSIS)</span>
-                        <span data-lang="en">Central Board of PERSIS Indonesia</span>
-                        <span data-lang="id">Pimpinan Pusat Persatuan Islam (PERSIS)</span>
-                    </p>
-                    <div class="mt-3 pt-3 border-t border-slate-100 w-full text-[11px] text-slate-600 italic">
-                        <span data-lang="ar">«العربية وحضورها الحضاري في جنوب شرق آسيا»</span>
-                        <span data-lang="en">"Arabic & Its Civilizational Role in SE Asia"</span>
-                        <span data-lang="id">"Bahasa Arab & Peradabannya di Asia Tenggara"</span>
-                    </div>
-                </div>
-
-                <!-- 2. Taba Foundation Delegation -->
-                <div class="bg-white rounded-3xl p-5 border-2 border-brand-600 shadow-md hover:shadow-xl transition-all text-center flex flex-col items-center">
-                    <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-brand-600 mb-3 bg-brand-950 flex items-center justify-center text-gold-400 text-3xl shadow">
-                        <i class="fa-solid fa-user-tie"></i>
-                    </div>
-                    <span class="text-[10px] font-bold text-gold-800 bg-gold-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-1.5">
-                        <span data-lang="ar">متحدث دولي</span>
-                        <span data-lang="en">International Keynote</span>
-                        <span data-lang="id">Keynote Internasional</span>
-                    </span>
-                    <h3 class="text-sm sm:text-base font-bold text-brand-950 font-arabic">
-                        <span data-lang="ar">وفد مؤسسة طابة للتعليم والتدريب</span>
-                        <span data-lang="en">Taba Foundation Delegation</span>
-                        <span data-lang="id">Delegasi Yayasan Thaba</span>
-                    </h3>
-                    <p class="text-[11px] sm:text-xs font-semibold text-gold-700 mt-0.5">
-                        <span data-lang="ar">معهد كفاءات طابة العالي للتدريب</span>
-                        <span data-lang="en">Higher Institute of Taba Competencies</span>
-                        <span data-lang="id">Lembaga Tinggi Pelatihan Thaba</span>
-                    </p>
-                    <p class="text-[10px] text-slate-500 mt-1">
-                        <span data-lang="ar">القاهرة والمدينة المنورة</span>
-                        <span data-lang="en">Cairo & Madinah</span>
-                        <span data-lang="id">Kairo & Madinah Al-Munawwarah</span>
-                    </p>
-                    <div class="mt-3 pt-3 border-t border-slate-100 w-full text-[11px] text-slate-600 italic">
-                        <span data-lang="ar">«مناهج إعداد معلمي العربية والمعايير العالمية»</span>
-                        <span data-lang="en">"Global Standards in Arabic Teacher Education"</span>
-                        <span data-lang="id">"Standar Global Pendidikan Guru Bahasa Arab"</span>
-                    </div>
-                </div>
-
-                <!-- 3. Vice Rector 1: Dr. Daris Tamin -->
-                <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
-                    <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-slate-200 mb-3 bg-slate-100 shadow">
-                        <img src="assets/d-2-avatar.jpg" alt="Dr. Daris Tamin, M.Pd." class="w-full h-full object-cover">
-                    </div>
-                    <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-1.5">
-                        <span data-lang="ar">جلسة رئيسية</span>
-                        <span data-lang="en">Plenary Speaker</span>
-                        <span data-lang="id">Pembicara Pleno</span>
-                    </span>
-                    <h3 class="text-sm sm:text-base font-bold text-brand-950 font-arabic">Dr. Daris Tamin, M.Pd.</h3>
-                    <p class="text-[11px] sm:text-xs font-semibold text-gold-700 mt-0.5">
-                        <span data-lang="ar">نائب الرئيس للشؤون الأكاديمية</span>
-                        <span data-lang="en">Vice Rector I (Academic Affairs)</span>
-                        <span data-lang="id">Wakil Rektor I (Bidang Akademik)</span>
-                    </p>
-                    <p class="text-[10px] text-slate-500 mt-1">IAI PERSIS Garut</p>
-                    <div class="mt-3 pt-3 border-t border-slate-100 w-full text-[11px] text-slate-600 italic">
-                        <span data-lang="ar">«تطوير الكفايات التدريسية والتحول الأكاديمي»</span>
-                        <span data-lang="en">"Pedagogical Competency & Academic Shift"</span>
-                        <span data-lang="id">"Kompetensi Pedagogik & Transformasi Akademik"</span>
-                    </div>
-                </div>
-
-                <!-- 4. Vice Rector 2: Dr. Nurul Irfan -->
-                <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
-                    <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-slate-200 mb-3 bg-slate-100 shadow">
-                        <img src="assets/d-3-avatar.jpg" alt="Dr. Nurul Irfan, M.Ag." class="w-full h-full object-cover">
-                    </div>
-                    <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-1.5">
-                        <span data-lang="ar">جلسة رئيسية</span>
-                        <span data-lang="en">Plenary Speaker</span>
-                        <span data-lang="id">Pembicara Pleno</span>
-                    </span>
-                    <h3 class="text-sm sm:text-base font-bold text-brand-950 font-arabic">Dr. Nurul Irfan, M.Ag.</h3>
-                    <p class="text-[11px] sm:text-xs font-semibold text-gold-700 mt-0.5">
-                        <span data-lang="ar">نائب الرئيس للشؤون المالية والإدارية</span>
-                        <span data-lang="en">Vice Rector II (Finance & Admin)</span>
-                        <span data-lang="id">Wakil Rektor II (Keuangan & Umum)</span>
-                    </p>
-                    <p class="text-[10px] text-slate-500 mt-1">IAI PERSIS Garut</p>
-                    <div class="mt-3 pt-3 border-t border-slate-100 w-full text-[11px] text-slate-600 italic">
-                        <span data-lang="ar">«الشراكات المؤسسية واستدامة التعليم الإسلامي»</span>
-                        <span data-lang="en">"Institutional Partnerships & Sustainability"</span>
-                        <span data-lang="id">"Kemitraan Kelembagaan & Keberlanjutan Pendidikan"</span>
-                    </div>
-                </div>
-
-                <!-- 5. Vice Rector 3: Dr. Heri Mohamad Tohari -->
-                <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
-                    <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-slate-200 mb-3 bg-slate-100 shadow">
-                        <img src="assets/d-5-avatar.jpg" alt="Dr. Heri Mohamad Tohari, M.Pd." class="w-full h-full object-cover">
-                    </div>
-                    <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-1.5">
-                        <span data-lang="ar">جلسة رئيسية</span>
-                        <span data-lang="en">Plenary Speaker</span>
-                        <span data-lang="id">Pembicara Pleno</span>
-                    </span>
-                    <h3 class="text-sm sm:text-base font-bold text-brand-950 font-arabic">Dr. Heri Mohamad Tohari, M.Pd.</h3>
-                    <p class="text-[11px] sm:text-xs font-semibold text-gold-700 mt-0.5">
-                        <span data-lang="ar">نائب الرئيس لشؤون الطلاب والتعاون</span>
-                        <span data-lang="en">Vice Rector III (Student Affairs & Collab)</span>
-                        <span data-lang="id">Wakil Rektor III (Kemahasiswaan & Kerjasama)</span>
-                    </p>
-                    <p class="text-[10px] text-slate-500 mt-1">IAI PERSIS Garut</p>
-                    <div class="mt-3 pt-3 border-t border-slate-100 w-full text-[11px] text-slate-600 italic">
-                        <span data-lang="ar">«الأنشطة الطلابية والتواصل الدولي لخدمة العربية»</span>
-                        <span data-lang="en">"Student Networks & Global Arabic Service"</span>
-                        <span data-lang="id">"Aktivitas Mahasiswa & Jaringan Global Bahasa Arab"</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    <!-- 
+    ===================================================================
+    SECTION 2: KEYNOTE SPEAKERS & LEADERSHIP GRID (TEMPORARILY HIDDEN PER PRD 4.3)
+    Disembunyikan sementara menunggu susunan narasumber resmi disetujui.
+    ===================================================================
+    -->
 
     <!-- SECTION 3: محاور المؤتمر الخمسة (THE 5 CONFERENCE THEMES - Pages 11-15 of PDF) -->
-    <section id="themes" class="py-12 sm:py-20 bg-white">
+    <section id="themes" class="py-12 sm:py-20 bg-slate-50 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
@@ -1181,20 +1009,14 @@
                         </div>
                     </div>
 
-                    <!-- Direct Registration Action for Tadrib -->
+                    <!-- Direct Registration Action for Tadrib (Single Google Form CTA per PRD 4.4) -->
                     <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
                         <!-- DIRECT GOOGLE FORM FOR TADRIB -->
-                        <a href="https://forms.gle/PpKqKkbv25GvpAzx5" target="_blank" class="px-5 py-3 rounded-xl bg-gold-400 hover:bg-gold-300 text-brand-950 font-black text-xs sm:text-sm transition-all shadow-lg flex items-center justify-center gap-2">
+                        <a href="https://forms.gle/PpKqKkbv25GvpAzx5" target="_blank" class="px-6 py-3.5 rounded-xl bg-gold-400 hover:bg-gold-300 text-brand-950 font-black text-xs sm:text-sm transition-all shadow-lg flex items-center justify-center gap-2">
                             <i class="fa-solid fa-file-pen text-brand-950"></i>
                             <span data-lang="ar">التسجيل في برنامج التدريب (Google Form) ↗</span>
                             <span data-lang="en">Enroll in Training (Google Form) ↗</span>
                             <span data-lang="id">Daftar Pelatihan Tadrib (Google Form) ↗</span>
-                        </a>
-
-                        <a href="https://tabaacademy.com/register-conf2027" target="_blank" class="px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-gold-300 border border-gold-400/50 text-xs font-semibold text-center transition-all">
-                            <span data-lang="ar">عبر منصة طابة (Taba Portal) ↗</span>
-                            <span data-lang="en">Via Taba Portal ↗</span>
-                            <span data-lang="id">Via Portal Thaba ↗</span>
                         </a>
                     </div>
 
@@ -1205,7 +1027,7 @@
         </div>
     </section>
 
-    <!-- SECTION 5: المجلات العلمية المحكمة الشريكة (AFFILIATED JOURNALS SECTION) -->
+    <!-- SECTION 5: المجلات العلمية المحكمة الشريكة (AFFILIATED JOURNALS SECTION - REVISED PER PRD 4.1 & 4.2) -->
     <section id="journals" class="py-12 sm:py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -1228,16 +1050,16 @@
                 <div class="w-16 sm:w-20 h-1 bg-gold-400 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <!-- 3 Affiliated Journals Display (Al-Bayan S2, Al-Muyassar S2, Mantiqu Tayr S3) -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8 max-w-5xl mx-auto">
+            <!-- 4 Affiliated Journals Display (Al-Bayan S2, Al-Muyassar S2, Mantiqu Tayr S3, Arabia S4) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 max-w-7xl mx-auto">
                 
                 <!-- Journal 1: Al-Bayan (S2) -->
-                <div class="bg-sand-50 rounded-3xl p-5 sm:p-8 border-2 border-brand-600 shadow-md hover:shadow-xl transition-all flex flex-col justify-between text-center relative overflow-hidden">
+                <div class="bg-sand-50 rounded-3xl p-5 sm:p-6 border-2 border-brand-600 shadow-md hover:shadow-xl transition-all flex flex-col justify-between text-center relative overflow-hidden">
                     <div class="absolute top-0 right-0 bg-brand-600 text-white text-xs font-black px-3.5 py-1 rounded-bl-xl shadow">
                         SINTA 2 (S2)
                     </div>
                     <div>
-                        <div class="w-14 h-14 sm:w-20 sm:h-20 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl sm:text-3xl mx-auto mb-3 sm:mb-4 border-2 border-brand-300">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl sm:text-2xl mx-auto mb-3 border-2 border-brand-300">
                             <i class="fa-solid fa-book-bookmark"></i>
                         </div>
                         <span class="text-[10px] sm:text-[11px] font-bold text-gold-700 bg-gold-50 px-2.5 py-0.5 rounded-full border border-gold-300 uppercase">
@@ -1245,31 +1067,38 @@
                             <span data-lang="en">International Journal</span>
                             <span data-lang="id">Jurnal Ilmiah Internasional</span>
                         </span>
-                        <h3 class="text-xl sm:text-2xl font-black text-brand-950 font-arabic mt-2 sm:mt-3">Al-Bayan</h3>
+                        <h3 class="text-xl font-black text-brand-950 font-arabic mt-2">Al-Bayan</h3>
                         <p class="text-xs font-semibold text-slate-500 mt-0.5">Jurnal Studi Ilmu Al-Qur'an dan Kebahasaan</p>
-                        <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                        
+                        <!-- Explicit Copyable ISSN Text (Per PRD 4.2) -->
+                        <div class="my-2.5 py-1.5 px-2 bg-white rounded-lg border border-slate-200 text-[11px] font-mono text-slate-700 flex items-center justify-center gap-1">
+                            <span class="font-bold text-brand-800">E-ISSN:</span>
+                            <span class="select-all font-semibold">2528-1054</span>
+                        </div>
+
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
                             <span data-lang="ar">مجلة محكمة مصنفة في المستوى الثاني الوطني (SINTA 2)، متخصصة في الدراسات اللغوية والقرآنية والترجمة.</span>
                             <span data-lang="en">A peer-reviewed journal indexed at national SINTA 2, specializing in Quranic, linguistic, and translation studies.</span>
                             <span data-lang="id">Jurnal ilmiah terakreditasi peringkat SINTA 2, berfokus pada studi kebahasaan, ilmu Al-Qur'an, dan kajian penerjemahan.</span>
                         </p>
                     </div>
-                    <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-200">
-                        <span class="text-xs font-bold text-brand-700 flex items-center justify-center gap-1.5">
-                            <i class="fa-solid fa-check-circle text-emerald-600"></i>
-                            <span data-lang="ar">معتمدة لنشر أبحاث المؤتمر</span>
-                            <span data-lang="en">Official Publishing Partner</span>
-                            <span data-lang="id">Mitra Resmi Publikasi Konferensi</span>
-                        </span>
+                    <div class="mt-4 pt-3 border-t border-slate-200">
+                        <a href="https://portal.issn.org/resource/ISSN/2528-1054" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-brand-700 hover:text-brand-900 transition-colors w-full py-1.5 px-2 rounded-lg hover:bg-brand-50">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            <span data-lang="ar">تفاصيل المجلة والاعتماد ↗</span>
+                            <span data-lang="en">View Journal & ISSN ↗</span>
+                            <span data-lang="id">Laman Jurnal & ISSN ↗</span>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Journal 2: Al-Muyassar (S2) -->
-                <div class="bg-sand-50 rounded-3xl p-5 sm:p-8 border-2 border-gold-400 shadow-md hover:shadow-xl transition-all flex flex-col justify-between text-center relative overflow-hidden">
+                <div class="bg-sand-50 rounded-3xl p-5 sm:p-6 border-2 border-gold-400 shadow-md hover:shadow-xl transition-all flex flex-col justify-between text-center relative overflow-hidden">
                     <div class="absolute top-0 right-0 bg-gold-500 text-brand-950 text-xs font-black px-3.5 py-1 rounded-bl-xl shadow">
                         SINTA 2 (S2)
                     </div>
                     <div>
-                        <div class="w-14 h-14 sm:w-20 sm:h-20 rounded-2xl bg-gold-100 text-gold-800 flex items-center justify-center text-xl sm:text-3xl mx-auto mb-3 sm:mb-4 border-2 border-gold-300">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gold-100 text-gold-800 flex items-center justify-center text-xl sm:text-2xl mx-auto mb-3 border-2 border-gold-300">
                             <i class="fa-solid fa-scroll"></i>
                         </div>
                         <span class="text-[10px] sm:text-[11px] font-bold text-brand-800 bg-brand-50 px-2.5 py-0.5 rounded-full border border-brand-300 uppercase">
@@ -1277,31 +1106,38 @@
                             <span data-lang="en">Arabic Language Pedagogy</span>
                             <span data-lang="id">Pengajaran Bahasa Arab</span>
                         </span>
-                        <h3 class="text-xl sm:text-2xl font-black text-brand-950 font-arabic mt-2 sm:mt-3">Al-Muyassar</h3>
+                        <h3 class="text-xl font-black text-brand-950 font-arabic mt-2">Al-Muyassar</h3>
                         <p class="text-xs font-semibold text-slate-500 mt-0.5">Journal of Arabic Learning and Pedagogy</p>
-                        <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                        
+                        <!-- Explicit Copyable ISSN Text (Per PRD 4.2) -->
+                        <div class="my-2.5 py-1.5 px-2 bg-white rounded-lg border border-slate-200 text-[11px] font-mono text-slate-700 flex items-center justify-center gap-1">
+                            <span class="font-bold text-gold-800">E-ISSN:</span>
+                            <span class="select-all font-semibold">2829-095X</span>
+                        </div>
+
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
                             <span data-lang="ar">مجلة علمية محكمة مصنفة في (SINTA 2)، تركز على طرائق تدريس العربية وتصميم المناهج للناطقين بغيرها.</span>
                             <span data-lang="en">A refereed journal indexed at SINTA 2, emphasizing Arabic teaching methods and curriculum design for non-native speakers.</span>
                             <span data-lang="id">Jurnal ilmiah terakreditasi SINTA 2 yang menitikberatkan metodologi pengajaran bahasa Arab dan desain kurikulum non-penutur asli.</span>
                         </p>
                     </div>
-                    <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-200">
-                        <span class="text-xs font-bold text-gold-700 flex items-center justify-center gap-1.5">
-                            <i class="fa-solid fa-check-circle text-gold-600"></i>
-                            <span data-lang="ar">مسار سريع للأوراق المتميزة</span>
-                            <span data-lang="en">Fast-Track for Selected Papers</span>
-                            <span data-lang="id">Jalur Fast-Track untuk Naskah Terpilih</span>
-                        </span>
+                    <div class="mt-4 pt-3 border-t border-slate-200">
+                        <a href="https://portal.issn.org/resource/ISSN/2829-095X" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-gold-700 hover:text-gold-900 transition-colors w-full py-1.5 px-2 rounded-lg hover:bg-gold-50">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            <span data-lang="ar">تفاصيل المجلة والاعتماد ↗</span>
+                            <span data-lang="en">View Journal & ISSN ↗</span>
+                            <span data-lang="id">Laman Jurnal & ISSN ↗</span>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Journal 3: Mantiqu Tayr (S3) -->
-                <div class="bg-sand-50 rounded-3xl p-5 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between text-center relative overflow-hidden">
+                <div class="bg-sand-50 rounded-3xl p-5 sm:p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between text-center relative overflow-hidden">
                     <div class="absolute top-0 right-0 bg-slate-700 text-white text-xs font-black px-3.5 py-1 rounded-bl-xl shadow">
                         SINTA 3 (S3)
                     </div>
                     <div>
-                        <div class="w-14 h-14 sm:w-20 sm:h-20 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center text-xl sm:text-3xl mx-auto mb-3 sm:mb-4 border-2 border-slate-300">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center text-xl sm:text-2xl mx-auto mb-3 border-2 border-slate-300">
                             <i class="fa-solid fa-feather-pointed"></i>
                         </div>
                         <span class="text-[10px] sm:text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-full border border-slate-300 uppercase">
@@ -1309,21 +1145,67 @@
                             <span data-lang="en">Literature & Islamic Thought</span>
                             <span data-lang="id">Sastra & Pemikiran Islam</span>
                         </span>
-                        <h3 class="text-xl sm:text-2xl font-black text-brand-950 font-arabic mt-2 sm:mt-3">Mantiqu Tayr</h3>
+                        <h3 class="text-xl font-black text-brand-950 font-arabic mt-2">Mantiqu Tayr</h3>
                         <p class="text-xs font-semibold text-slate-500 mt-0.5">Journal of Arabic Literature & Islamic Thought</p>
-                        <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                        
+                        <!-- Explicit Copyable ISSN Text (Per PRD 4.2) -->
+                        <div class="my-2.5 py-1.5 px-2 bg-white rounded-lg border border-slate-200 text-[11px] font-mono text-slate-700 flex items-center justify-center gap-1">
+                            <span class="font-bold text-slate-800">E-ISSN:</span>
+                            <span class="select-all font-semibold">2774-6372</span>
+                        </div>
+
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
                             <span data-lang="ar">مجلة علمية معتمدة مصنفة في (SINTA 3)، تعنى بالدراسات الأدبية، البلاغية، والفكر الإسلامي وحوار الحضارات.</span>
                             <span data-lang="en">An accredited journal at SINTA 3 covering Arabic literary studies, rhetoric, Islamic civilization, and interfaith dialogue.</span>
                             <span data-lang="id">Jurnal ilmiah terakreditasi SINTA 3 yang berfokus pada studi sastra, balaghah, pemikiran Islam, dan peradaban dunia.</span>
                         </p>
                     </div>
-                    <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-200">
-                        <span class="text-xs font-bold text-slate-600 flex items-center justify-center gap-1.5">
-                            <i class="fa-solid fa-check-circle text-slate-600"></i>
-                            <span data-lang="ar">نشر معتمد ومفهرس</span>
-                            <span data-lang="en">Indexed Peer-Reviewed Publication</span>
-                            <span data-lang="id">Publikasi Terakreditasi & Terindeks</span>
+                    <div class="mt-4 pt-3 border-t border-slate-200">
+                        <a href="https://portal.issn.org/resource/ISSN/2774-6372" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-slate-700 hover:text-slate-900 transition-colors w-full py-1.5 px-2 rounded-lg hover:bg-slate-100">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            <span data-lang="ar">تفاصيل المجلة والاعتماد ↗</span>
+                            <span data-lang="en">View Journal & ISSN ↗</span>
+                            <span data-lang="id">Laman Jurnal & ISSN ↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Journal 4: Arabia (S4) - NEW PER PRD 4.1 & 4.2 -->
+                <div class="bg-sand-50 rounded-3xl p-5 sm:p-6 border-2 border-emerald-600 shadow-md hover:shadow-xl transition-all flex flex-col justify-between text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-emerald-600 text-white text-xs font-black px-3.5 py-1 rounded-bl-xl shadow">
+                        SINTA 4 (S4)
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl sm:text-2xl mx-auto mb-3 border-2 border-emerald-300">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="text-[10px] sm:text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-300 uppercase">
+                            <span data-lang="ar">تعليم اللغة العربية</span>
+                            <span data-lang="en">Arabic Education Journal</span>
+                            <span data-lang="id">Pendidikan Bahasa Arab</span>
                         </span>
+                        <h3 class="text-xl font-black text-brand-950 font-arabic mt-2">Arabia</h3>
+                        <p class="text-xs font-semibold text-slate-500 mt-0.5">UIN Sunan Kudus</p>
+                        
+                        <!-- Explicit Copyable ISSN Text (Per PRD 4.2) -->
+                        <div class="my-2.5 py-1.5 px-2 bg-white rounded-lg border border-slate-200 text-[10px] font-mono text-slate-700 flex flex-col gap-0.5 items-center justify-center">
+                            <div><span class="font-bold text-emerald-800">P-ISSN:</span> <span class="select-all font-semibold">2085-644X</span></div>
+                            <div><span class="font-bold text-emerald-800">E-ISSN:</span> <span class="select-all font-semibold">2502-2482</span></div>
+                        </div>
+
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            <span data-lang="ar">مجلة علمية محكمة مصنفة في (SINTA 4)، تصدر عن جامعة كودوس الإسلامية الحكومية، تعنى ببحوث تعليم العربية.</span>
+                            <span data-lang="en">A refereed journal indexed at SINTA 4, published by UIN Sunan Kudus, focusing on Arabic language education and pedagogy.</span>
+                            <span data-lang="id">Jurnal ilmiah terakreditasi SINTA 4 yang diterbitkan oleh UIN Sunan Kudus, berfokus pada riset pendidikan dan pembelajaran bahasa Arab.</span>
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200">
+                        <a href="https://journal.uinsuku.ac.id/index.php/Arabia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-900 transition-colors w-full py-1.5 px-2 rounded-lg hover:bg-emerald-50">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            <span data-lang="ar">زيارة موقع المجلة ↗</span>
+                            <span data-lang="en">Visit Journal Website ↗</span>
+                            <span data-lang="id">Kunjungi Laman Jurnal ↗</span>
+                        </a>
                     </div>
                 </div>
 
@@ -1403,7 +1285,7 @@
                             </div>
                             <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Presentasi oral (Onsite / Online)</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Peluang publikasi jurnal SINTA 2 / SINTA 3</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Peluang publikasi jurnal SINTA 2 / 3 / 4</li>
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Sertifikat pemakalah resmi & seminar kit</li>
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Prosiding ber-ISBN & e-Book abstrak</li>
                             </ul>
@@ -1639,47 +1521,45 @@
         </div>
     </section>
 
-    <!-- SECTION 7: بوابات التسجيل الرسمية واستمارة GOOGLE FORM (REGISTRATION PORTALS) -->
+    <!-- SECTION 7: بوابات التسجيل الرسمية واستمارة GOOGLE FORM (SINGLE OFFICIAL REGISTRATION PORTAL PER PRD 4.4) -->
     <section id="contact" class="py-12 sm:py-20 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
                 <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
-                    <span data-lang="ar">بوابات التقديم</span>
-                    <span data-lang="en">Registration Portals</span>
+                    <span data-lang="ar">بوابة التقديم الرسمية</span>
+                    <span data-lang="en">Official Registration</span>
                     <span data-lang="id">Kanal Pendaftaran Resmi</span>
                 </span>
                 <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-950 font-arabic mt-3">
-                    <span data-lang="ar">المشاركة والتواصل — كن جزءًا من المؤتمر الدولي</span>
-                    <span data-lang="en">Registration Portals & Official Channels</span>
-                    <span data-lang="id">Pendaftaran & Kontak Resmi Konferensi</span>
+                    <span data-lang="ar">المشاركة والتسجيل — كن جزءًا من المؤتمر الدولي</span>
+                    <span data-lang="en">Registration & Participation — ICALIS 2027</span>
+                    <span data-lang="id">Pendaftaran & Partisipasi — Konferensi ICALIS 2027</span>
                 </h2>
                 <div class="w-16 sm:w-20 h-1 bg-gold-400 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <!-- REGISTRATION PORTALS CARDS (GOOGLE FORM HIGHLIGHTED) -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 mb-10 sm:mb-16 items-stretch">
-                
-                <!-- PRIMARY CARD: GOOGLE FORM (7 COLS) -->
-                <div class="lg:col-span-7 bg-gradient-to-br from-brand-900 via-brand-950 to-brand-900 text-white rounded-3xl p-5 sm:p-10 border-4 border-gold-400 shadow-2xl relative flex flex-col justify-between">
+            <!-- SINGLE FOCAL REGISTRATION CARD: OFFICIAL GOOGLE FORM (PER PRD 4.4) -->
+            <div class="max-w-4xl mx-auto mb-10 sm:mb-16">
+                <div class="bg-gradient-to-br from-brand-900 via-brand-950 to-brand-900 text-white rounded-3xl p-6 sm:p-10 border-4 border-gold-400 shadow-2xl relative flex flex-col justify-between">
                     <div class="absolute -top-3 right-5 sm:right-8 bg-gold-400 text-brand-950 font-black text-[10px] sm:text-xs uppercase px-3 sm:px-4 py-0.5 rounded-full shadow">
-                        <span data-lang="ar">الاستمارة الرئيسية المعتمدة</span>
-                        <span data-lang="en">Official Primary Form</span>
-                        <span data-lang="id">Formulir Utama Resmi</span>
+                        <span data-lang="ar">البوابة الرسمية المعتمدة الوحيدة</span>
+                        <span data-lang="en">Official Primary Portal</span>
+                        <span data-lang="id">Portal Pendaftaran Resmi Tunggal</span>
                     </div>
 
                     <div>
                         <div class="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4 mt-1">
-                            <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-2xl bg-gold-400 text-brand-950 flex items-center justify-center text-lg sm:text-2xl font-bold shadow-md shrink-0">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gold-400 text-brand-950 flex items-center justify-center text-xl sm:text-3xl font-bold shadow-md shrink-0">
                                 <i class="fa-solid fa-file-pen"></i>
                             </div>
                             <div>
                                 <span class="text-[10px] sm:text-xs text-gold-300 font-bold uppercase tracking-wider block">
-                                    <span data-lang="ar">بوابة التسجيل الإلكترونية</span>
-                                    <span data-lang="en">Online Registration Portal</span>
-                                    <span data-lang="id">Portal Pendaftaran Daring</span>
+                                    <span data-lang="ar">بوابة التسجيل الإلكترونية الموحدة</span>
+                                    <span data-lang="en">Unified Online Registration Portal</span>
+                                    <span data-lang="id">Portal Pendaftaran Daring Terpadu</span>
                                 </span>
-                                <h3 class="text-lg sm:text-3xl font-black font-arabic text-white">
+                                <h3 class="text-xl sm:text-3xl font-black font-arabic text-white">
                                     <span data-lang="ar">استمارة التسجيل الرسمية (Google Form)</span>
                                     <span data-lang="en">Official Registration Form (Google Form)</span>
                                     <span data-lang="id">Formulir Pendaftaran Resmi (Google Form)</span>
@@ -1688,95 +1568,49 @@
                         </div>
 
                         <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-4 sm:mb-5 text-justify">
-                            <span data-lang="ar">للمشاركة في المؤتمر بتقديم ورقة علمية محكمة، أو الحضور فقط، أو التسجيل في البرنامج التدريبي لمدرسي العربية (5 أيام)، يرجى تعبئة استمارة التسجيل المعتمدة عبر الرابط التالي:</span>
-                            <span data-lang="en">To participate with a peer-reviewed research paper, general attendance, or the 5-day Arabic teacher training course, please complete the official registration form at the link below:</span>
+                            <span data-lang="ar">للمشاركة في المؤتمر بتقديم ورقة علمية محكمة، أو الحضور فقط، أو التسجيل في البرنامج التدريبي لمدرسي العربية (5 أيام)، يرجى تعبئة استمارة التسجيل المعتمدة عبر الرابط الرسمي التالي:</span>
+                            <span data-lang="en">To participate with a peer-reviewed research paper, general attendance, or the 5-day Arabic teacher training course, please complete the official registration form via the link below:</span>
                             <span data-lang="id">Untuk mendaftar sebagai pemakalah naskah ilmiah, peserta umum/pendengar, maupun peserta pelatihan guru bahasa Arab (Tadrib 5 Hari), silakan mengisi formulir resmi melalui tautan berikut:</span>
                         </p>
 
-                        <div class="bg-black/30 rounded-2xl p-3.5 sm:p-4 border border-white/10 mb-5 space-y-2 text-xs text-slate-300">
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 shrink-0"></i>
-                                <span data-lang="ar">متاح للمشاركين من إندونيسيا والعالم العربي والدولي.</span>
-                                <span data-lang="en">Open for participants from Indonesia, the Arab world, and globally.</span>
-                                <span data-lang="id">Terbuka bagi peserta Indonesia maupun mancanegara.</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-black/30 rounded-2xl p-4 border border-white/10 mb-6 text-xs text-slate-300">
+                            <div class="flex items-start gap-2"><i class="fa-solid fa-globe text-gold-400 mt-0.5 shrink-0"></i>
+                                <span>
+                                    <span data-lang="ar">متاح للمشاركين من إندونيسيا والعالم العربي والدولي.</span>
+                                    <span data-lang="en">Open for domestic & international participants.</span>
+                                    <span data-lang="id">Terbuka untuk peserta lokal maupun mancanegara.</span>
+                                </span>
                             </div>
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 shrink-0"></i>
-                                <span data-lang="ar">إمكانية رفع ملخص البحث وملف السيرة الذاتية مباشرة.</span>
-                                <span data-lang="en">Direct upload for abstracts, draft manuscripts, and CVs.</span>
-                                <span data-lang="id">Unggah langsung berkas abstrak/naskah dan curriculum vitae.</span>
+                            <div class="flex items-start gap-2"><i class="fa-solid fa-file-arrow-up text-gold-400 mt-0.5 shrink-0"></i>
+                                <span>
+                                    <span data-lang="ar">رفع الملخص والبيانات والسيرة الذاتية مباشرة.</span>
+                                    <span data-lang="en">Direct upload for abstracts and CV files.</span>
+                                    <span data-lang="id">Unggah berkas abstrak dan data diri langsung.</span>
+                                </span>
                             </div>
-                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 shrink-0"></i>
-                                <span data-lang="ar">تأكيد استلام فوري ومتابعة من أمانة المؤتمر.</span>
-                                <span data-lang="en">Instant submission confirmation and follow-up from the secretariat.</span>
-                                <span data-lang="id">Konfirmasi penerimaan instan dan tindak lanjut oleh panitia.</span>
+                            <div class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-gold-400 mt-0.5 shrink-0"></i>
+                                <span>
+                                    <span data-lang="ar">تأكيد استلام فوري ومتابعة من الأمانة العامة.</span>
+                                    <span data-lang="en">Immediate confirmation & committee follow-up.</span>
+                                    <span data-lang="id">Konfirmasi instan & pendampingan panitia.</span>
+                                </span>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <a href="https://forms.gle/PpKqKkbv25GvpAzx5" target="_blank" class="w-full py-3 sm:py-4 px-4 sm:px-6 rounded-2xl bg-gradient-to-r from-gold-400 via-amber-400 to-gold-300 hover:from-gold-300 hover:to-amber-300 text-brand-950 font-black text-xs sm:text-base text-center transition-all shadow-xl flex items-center justify-center gap-2">
+                        <a href="https://forms.gle/PpKqKkbv25GvpAzx5" target="_blank" class="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-2xl bg-gradient-to-r from-gold-400 via-amber-400 to-gold-300 hover:from-gold-300 hover:to-amber-300 text-brand-950 font-black text-xs sm:text-base text-center transition-all shadow-xl flex items-center justify-center gap-2">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             <span data-lang="ar">فتح استمارة التسجيل الآن (Google Form) ↗</span>
-                            <span data-lang="en">Open Registration (Google Form) ↗</span>
+                            <span data-lang="en">Open Registration Form (Google Form) ↗</span>
                             <span data-lang="id">Buka Formulir Pendaftaran Sekarang (Google Form) ↗</span>
                         </a>
 
-                        <p class="text-center text-[10px] sm:text-xs text-gold-300/80 mt-2 font-mono truncate">
+                        <p class="text-center text-[10px] sm:text-xs text-gold-300/80 mt-2.5 font-mono truncate">
                             https://forms.gle/PpKqKkbv25GvpAzx5
                         </p>
                     </div>
                 </div>
-
-                <!-- SECONDARY CARD: TABA ACADEMY PORTAL (5 COLS) -->
-                <div class="lg:col-span-5 bg-sand-50 rounded-3xl p-5 sm:p-8 border-2 border-slate-300 shadow-md flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
-                            <img src="assets/taba-logo.png" alt="Taba" class="h-8 sm:h-10 object-contain">
-                            <div>
-                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-bold uppercase block">
-                                    <span data-lang="ar">الشريك الدولي</span>
-                                    <span data-lang="en">International Partner</span>
-                                    <span data-lang="id">Mitra Internasional</span>
-                                </span>
-                                <h4 class="text-base sm:text-xl font-bold text-brand-950 font-arabic">
-                                    <span data-lang="ar">استمارة مؤسسة طابة (Taba Portal)</span>
-                                    <span data-lang="en">Taba Foundation Portal</span>
-                                    <span data-lang="id">Portal Pendaftaran Thaba</span>
-                                </h4>
-                            </div>
-                        </div>
-
-                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4 text-justify">
-                            <span data-lang="ar">للمشاركين من العالم العربي ومبتعثي مؤسسة طابة الراغبين في التسجيل المباشر عبر البوابة الإلكترونية لمعهد كفاءات طابة العالي للتدريب:</span>
-                            <span data-lang="en">For delegates and participants from the Arab world wishing to register via the official Taba Competencies Institute portal:</span>
-                            <span data-lang="id">Bagi peserta dari Dunia Arab dan utusan Yayasan Thaba yang hendak mendaftar melalui portal resmi Lembaga Tinggi Thaba:</span>
-                        </p>
-
-                        <div class="bg-white rounded-xl p-3 border border-slate-200 mb-5 text-xs text-slate-600 space-y-1.5">
-                            <div><i class="fa-solid fa-globe text-brand-600 mr-1.5"></i>
-                                <span data-lang="ar">مخصص للمشاركات الخارجية من مصر والسعودية والخليج.</span>
-                                <span data-lang="en">Dedicated for international delegates from Egypt, KSA, and GCC.</span>
-                                <span data-lang="id">Dikhususkan untuk peserta dari Mesir, Arab Saudi, dan negara Teluk.</span>
-                            </div>
-                            <div><i class="fa-solid fa-building text-brand-600 mr-1.5"></i>
-                                <span data-lang="ar">يتيح طلبات الرعاية المؤسسية ومعرض الكتاب.</span>
-                                <span data-lang="en">Handles institutional partnerships & book fair booths.</span>
-                                <span data-lang="id">Melayani kemitraan institusi dan stan pameran buku.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <a href="https://tabaacademy.com/register-conf2027" target="_blank" class="w-full py-3 px-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs sm:text-sm text-center transition-all shadow flex items-center justify-center gap-2">
-                            <span data-lang="ar">بوابة مؤسسة طابة الإلكترونية ↗</span>
-                            <span data-lang="en">Open Taba Academy Portal ↗</span>
-                            <span data-lang="id">Buka Portal Yayasan Thaba ↗</span>
-                        </a>
-                        <p class="text-center text-[10px] text-slate-400 mt-2 font-mono truncate">
-                            https://tabaacademy.com/register-conf2027
-                        </p>
-                    </div>
-                </div>
-
             </div>
 
             <!-- Steps & Contact Info from Page 19 of PDF -->
@@ -1816,9 +1650,9 @@
                                     <span data-lang="id">Isi Formulir Pendaftaran</span>
                                 </strong>
                                 <span class="text-slate-600 text-[11px]">
-                                    <span data-lang="ar">عبر Google Form أو منصة طابة بالبيانات المطلوبة.</span>
-                                    <span data-lang="en">Via Google Form or Taba portal accurately.</span>
-                                    <span data-lang="id">Lengkapi data via Google Form atau portal Thaba.</span>
+                                    <span data-lang="ar">تعبئة استمارة التسجيل الرسمية (Google Form) بالبيانات المطلوبة بدقة.</span>
+                                    <span data-lang="en">Fill out the official registration form (Google Form) with accurate information.</span>
+                                    <span data-lang="id">Mengisi formulir pendaftaran resmi (Google Form) dengan data yang lengkap dan valid.</span>
                                 </span>
                             </div>
                         </div>
@@ -1832,8 +1666,8 @@
                                     <span data-lang="id">Kirim Abstrak & Naskah</span>
                                 </strong>
                                 <span class="text-slate-600 text-[11px]">
-                                    <span data-lang="ar">رفع الملفات مباشرة أو إرسالها لبريد المؤتمر.</span>
-                                    <span data-lang="en">Upload files directly or email to secretariat.</span>
+                                    <span data-lang="ar">رفع الملفات مباشرة عبر الاستمارة أو إرسالها لبريد المؤتمر.</span>
+                                    <span data-lang="en">Upload files directly via the form or email to secretariat.</span>
                                     <span data-lang="id">Unggah naskah di formulir atau kirim ke email panitia.</span>
                                 </span>
                             </div>
